@@ -48,39 +48,39 @@ public class OrderServiceTest {
                                 "Medium coffee....3.0 CHF\r\n" +
                                 "Large coffee....3.5 CHF\r\n" +
                                 "Orange juice....3.95 CHF\r\n" +
-                                "Extra milk....0.3 CHF\r\n" +
+                                "Extra milk....0.8 CHF\r\n" +
                                 "Foamed milk....0.5 CHF\r\n" +
                                 "Special roast coffee....0.9 CHF\r\n" +
-                                "TOTAL: 14.65 CHF\r\n")),
+                                "TOTAL: 15.15 CHF\r\n")),
 
                 Arguments.of(new String[]{"s-coffee", "m-coffee", "l-coffee", "orange-juice", "add-em", "add-fm", "add-rc", "orange-juice"} ,
                         ( "Small coffee....2.5 CHF\r\n" +
                                 "Medium coffee....3.0 CHF\r\n" +
                                 "Large coffee....3.5 CHF\r\n" +
                                 "Orange juice....3.95 CHF\r\n" +
-                                "Extra milk....0.3 CHF\r\n" +
+                                "Extra milk....0.8 CHF\r\n" +
                                 "Foamed milk....0.5 CHF\r\n" +
                                 "Special roast coffee....0.9 CHF\r\n" +
                                 "Orange juice....3.95 CHF\r\n" +
                                 "Bonus Small coffee....-2.5 CHF\r\n" +
-                                "TOTAL: 16.1 CHF\r\n")),
+                                "TOTAL: 16.6 CHF\r\n")),
 
                 Arguments.of(new String[]{"s-coffee", "bacon-roll", "add-em", "add-fm" } ,
                         ( "Small coffee....2.5 CHF\r\n" +
                                 "Bacon roll....4.5 CHF\r\n" +
-                                "Extra milk....0.3 CHF\r\n" +
+                                "Extra milk....0.8 CHF\r\n" +
                                 "Foamed milk....0.5 CHF\r\n" +
-                                "Bonus Extra milk....-0.3 CHF\r\n" +
-                                "TOTAL: 7.5 CHF\r\n")),
+                                "Bonus Foamed milk....-0.5 CHF\r\n" +
+                                "TOTAL: 7.8 CHF\r\n")),
 
                 Arguments.of(new String[]{"s-coffee", "bacon-roll", "m-coffee", "bacon-roll", "add-em", "add-rc"} ,
                         ( "Small coffee....2.5 CHF\r\n" +
                                 "Bacon roll....4.5 CHF\r\n" +
                                 "Medium coffee....3.0 CHF\r\n" +
                                 "Bacon roll....4.5 CHF\r\n" +
-                                "Extra milk....0.3 CHF\r\n" +
+                                "Extra milk....0.8 CHF\r\n" +
                                 "Special roast coffee....0.9 CHF\r\n" +
-                                "Bonus Extra milk....-0.3 CHF\r\n" +
+                                "Bonus Extra milk....-0.8 CHF\r\n" +
                                 "Bonus Special roast coffee....-0.9 CHF\r\n" +
                                 "TOTAL: 14.5 CHF\r\n")),
 
@@ -133,10 +133,10 @@ public class OrderServiceTest {
                         ("Small coffee....2.5 CHF\r\n" +
                                 "Large coffee....3.5 CHF\r\n" +
                                 "Orange juice....3.95 CHF\r\n" +
-                                "Extra milk....0.3 CHF\r\n" +
+                                "Extra milk....0.8 CHF\r\n" +
                                 "Foamed milk....0.5 CHF\r\n" +
                                 "Special roast coffee....0.9 CHF\r\n" +
-                                "TOTAL: 14.65 CHF\r\n")),
+                                "TOTAL: 15.15 CHF\r\n")),
 
                 Arguments.of(new String[]{"s-coffee", "m-coffee", "l-coffee", "orange-juice", "add-em", "add-fm", "add-rc", "orange-juice"} ,
                         ( "Small coffee....2.5 CHF\r\n" +
@@ -152,7 +152,7 @@ public class OrderServiceTest {
                 Arguments.of(new String[]{"s-coffee", "bacon-roll", "add-em", "add-fm" } ,
                         ( "Small coffee....2.5 CHF\r\n" +
                                 "Bacon roll....4.5 CHF\r\n" +
-                                "Extra milk....0.3 CHF\r\n" +
+                                "Extra milk....0.8 CHF\r\n" +
                                 "Foamed milk....0.5 CHF\r\n" +
                                 "TOTAL: 7.8 CHF\r\n")),
 
@@ -161,7 +161,7 @@ public class OrderServiceTest {
                                 "Bacon roll....4.5 CHF\r\n" +
                                 "Medium coffee....3.0 CHF\r\n" +
                                 "Bacon roll....4.5 CHF\r\n" +
-                                "Extra milk....0.3 CHF\r\n" +
+                                "Extra milk....0.8 CHF\r\n" +
                                 "Special roast coffee....0.9 CHF\r\n" +
                                 "Bonus Extra milk....-0.3 CHF\r\n" +
                                 "TOTAL: 19.4 CHF\r\n")),
